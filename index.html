@@ -69,7 +69,7 @@
       <!-- ======= content ======= -->
       <section class="content">
         <div class="container">
-          <h2 class="advantages"></h2>
+          <h2 class="advantages visually-hidden"></h2>
           <ul class="advantages-list">
             <li class="advantages-item">
               <div class="content-icon">
@@ -538,14 +538,13 @@
         <div class="subscribe">
           <p class="subscribe-name">Subscribe</p>
           <form class="subscribe-input">
-            <label for="email"></label>
-            <input
-              class="input-form"
-              id="email"
-              type="email"
-              name="email"
-              placeholder="E-mail"
-            />
+            <label class="subscribe-label">
+              <input
+                class="input-form"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+            /></label>
             <button type="submit" class="subscribe-button">
               Subscribe
               <svg class="icon-subscribe" width="24" height="24">
@@ -556,7 +555,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay">
+    <div class="modal-overlay is-open">
       <div class="modal-form">
         <button class="modal-close-button" type="button">
           <svg class="close-icon" width="8" height="8">
@@ -616,25 +615,25 @@
             </div>
           </div>
           <div class="input-form-box">
-            <label class="label-text" for="feedback">Comment</label>
+            <label class="label-text" for="user-comment">Comment</label>
             <textarea
               class="feedback"
-              id="feedback"
-              name="feedback"
+              id="user-comment"
+              name="user-comment"
               rows="5"
               placeholder="Text input"
             ></textarea>
           </div>
           <div class="checkbox">
             <input
-              class="privacy advantages"
-              id="privacypolicy"
+              class="privacy visually-hidden"
+              id="user-privacy"
               type="checkbox"
-              name="privacypolicy"
+              name="user-privacy"
               value="true"
               required
             />
-            <label class="privacy-label" for="privacypolicy">
+            <label class="privacy-label" for="user-privacy">
               <span class="checkbox-icon"
                 ><svg class="checked-icon" width="10" height="8">
                   <use href="./images/icons.svg#checked-icon"></use>
