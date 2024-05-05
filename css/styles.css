@@ -481,35 +481,42 @@ background-color: #404bbf;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
-	color: #fff;
+	color: #ffffff;
 	margin-bottom: 16px;
 }
 .subscribe-input {
 	display: flex;
 	gap: 24px;
 }
-.input-form {
+.input-form-subscribe {
 	font-family: inherit;
-	border: 1px solid #fff;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 2;
+	letter-spacing: 0.04em;
+	color: #ffffff;
+	border: 1px solid #ffffff;
 	border-radius: 4px;
 	background-color: transparent;
 	width: 264px;
 	height: 40px;
 	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
-.input-form::placeholder {
+.input-form-subscribe::placeholder {
 	font-family: inherit;
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 2;
 	letter-spacing: 0.04em;
-	color: #fff;
+	color: #ffffff;
 	padding-left: 16px;
 }
 .subscribe-button {
 	display: inline-flex;
+	justify-content: center;
 	align-items: center;
-
+	cursor: pointer;
+	border: none;
 	background-color: #4d5ae5;
 	border-radius: 4px;
 	padding: 8px 24px;
@@ -606,8 +613,9 @@ background-color: #404bbf;
 	margin-bottom: 8px;
 	position: relative;
 }
-.input-form-box:last-child {
+.input-form-box-comment {
 	margin-bottom: 16px;
+	position: relative;
 }
 .label-text {
 	display: block;
